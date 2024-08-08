@@ -1,0 +1,276 @@
+:root {
+    --principal:#ff6600;
+    --rojo: #d31900;
+    --naranja:  #7cb490;
+    --naranjaDeg:  #7cb49049;
+    --claro: #ffdcaf1c;
+}
+/*GENERAL*/
+body {
+    font-family: Poppins;
+    background-color: rgba(175, 175, 175, 0.213);
+    line-height: 2.5;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.centrar {
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    color: #ffffff;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+input {
+    border-style: hidden;
+    border-bottom-style: solid;
+}
+/*ENCABEZADO*/
+.cabecera-index {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../imagenes/juegos.jpg);
+    color: #f5f5f5;
+    background-position: center center;
+    background-size: cover;
+    height: fit-content;
+}
+.cabecera-index h1 {
+    font-family: Share Tech Mono;
+}
+.cabecera {
+    background-color: var(--principal);
+}
+.barra {
+    margin-left: 2rem;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.enlaces {
+    /*display: flex;*/
+    margin: 1rem;
+    width: 160rem;
+    padding: 1rem;
+    text-align: right;
+}
+.boton-barra {
+    background: none;
+    border: none;
+    color: #ffffff;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.boton-review {
+    background: none;
+    border: none;
+    color: var(--rojo);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.contenido-desplegable {
+    display: inline-block;
+    position: relative;
+}
+.menu-desp {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-desp a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu-desp a:hover {
+    background-color: #ddd;
+}
+/*SECCIONES*/
+.contenedor-secciones {
+    /*display: flex;*/
+    flex-wrap: wrap;
+}
+.secciones {
+    border: 1px solid #B5B5B5;
+    background-color: var(--claro);
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: none;
+}
+.secciones:hover {
+    background-color: var(--naranjaDeg);
+}
+.contenedor-secciones a {
+    color: black;
+    margin-right: 2rem;
+    text-decoration: none;
+    text-transform: none;
+}
+/*NOTICIAS*/
+.contenido-noticias {
+    padding: 1rem;
+    text-align: justify;
+}
+.contenido-noticias img {
+    width: 60%;
+    justify-content: center;
+}
+.contenido-noticias a{
+    color: var(--rojo);
+    text-transform: none;
+}
+/*OPINIONES*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+}
+td {
+    width: 50%;
+}
+.accordion {
+    font-family: Poppins;
+    background-color: white;
+    color: var(--rojo);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+}
+
+.panel p {
+    margin: 0;
+}
+
+/*FORMULARIO*/
+.formulario {
+    width: 80%;
+    background-color: var(--naranjaDeg);
+    border-radius: 2rem;
+    padding: auto;
+    margin: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.contactForm {
+    width: 80%;
+    padding: auto;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#mensaje {
+    height: 10rem;
+}
+button {
+    background-color: var(--rojo);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+/*NOSOTROS*/
+.creadores {
+    justify-content: center;
+    align-items: center;
+}
+.creadores td {
+    width: 70%;
+    border-bottom-color: #000000;
+    border-bottom-style: double;
+}
+.creadores img {
+    width: 80%;
+}
+
+/*PIE*/
+.piedepagina {
+    background-color: var(--principal);
+    margin: 0;
+    width: 100%;
+}
+.cont-pie {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.abajo {
+    margin: 1rem;
+    width: 150rem;
+    padding: 0.5rem;
+    text-align: left;
+    color: #fff;
+}

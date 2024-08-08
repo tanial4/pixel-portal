@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pixel Portal - Contactanos</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<body>
+    <header class="cabecera">
+            <div class="barra">
+                <a href="index2.html">
+                    <img src="imagenes/logo.png" width="45%">
+                </a>
+                <nav class="enlaces">
+                    <div class="contenido-desplegable">
+                        <button class="boton-barra" id="boton-barra">Menú</button>
+                        <ul class="menu-desp" id="menu-desp">
+                            <li><a href="noticias.html">Noticias</a></li>
+                            <li><a href="resenas.html">Reseñas</a></li>
+                            <li><a href="guiasYConsejos.html">Guías y Consejos</a></li>
+                            <li><a href="contacto.html">Contactanos</a></li>
+                        </ul>
+                    </div>
+                    <a href="somos.html">Nosotros</a>
+                </nav>
+            </div>
+    </header>
+    <main class="contenedor">
+        <h2 class="centrar">PONTE EN CONTACTO CON NOSOTROS</h2>
+        <div class="contenedor-secciones">
+            <center>
+                <div class="formulario">
+                    <form id="contactForm" class="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Pregunta o Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </center>
+        </div>
+    </main>
+    <footer class="piedepagina">
+        <div class="cont-pie">
+            <nav class="abajo">
+                <h4>Tania Lizeth Mejía Saldaña</h4>
+                <h4>Alejandro Cisneros Martínez</h4>
+                <h4>Emiliano Toledo Zamorano</h4>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
